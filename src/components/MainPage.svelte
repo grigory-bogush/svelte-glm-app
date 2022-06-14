@@ -4,7 +4,7 @@ import Record from "./Record.svelte";
   import type AuthAPi from "../modules/AuthApi";
   export let authApi: AuthAPi;
 
-  const gmlApi = new GmlApi(GML_API_URL, authApi);
+  const gmlApi = new GmlApi(import.meta.env.VITE_GML_API_URL, authApi);
 
   const recordsPromise = gmlApi.listRecords();
 </script>

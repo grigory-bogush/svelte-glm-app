@@ -7,8 +7,7 @@ import AuthApi from "./modules/AuthApi";
 	let password = '';
 	let isLoggedIn = false;
 
-	console.log("auth api", GML_API_URL);
-	const authApi = new AuthApi(GML_API_URL);
+	const authApi = new AuthApi(import.meta.env.VITE_GML_API_URL);
 
 	function onSubmit(event: SubmitEvent) {
 		event.preventDefault();

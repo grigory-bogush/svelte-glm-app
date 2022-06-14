@@ -1,2 +1,2 @@
 
-var GML_API_URL: string;
+var VITE_GML_API_URL: string;
